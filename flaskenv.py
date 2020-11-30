@@ -1,4 +1,3 @@
-
 #! /usr/bin/env python3
 import os
 import sys
@@ -19,8 +18,8 @@ with open("app.py", "w+") as f:
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return 'hello world'
-app.run(debug=True)""")
+    return 'Hello World'
+app.run(debug=True, port=80, host="0.0.0.0")""")
     f.close()
 os.mkdir("static")
 os.mkdir("templates")
@@ -28,6 +27,6 @@ os.chdir("static")
 urllib.request.urlretrieve("http://transparent-favicon.info/favicon.ico", "favicon.ico")
 os.chdir("../templates")
 open("index.html", "w+").close()
-
+os.chdir("..")
 if "--extra-dir" in sys.argv:
     os.mkdir(sys.argv[sys.argv.index("--extra-dir")+1])
