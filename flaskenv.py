@@ -2,7 +2,12 @@
 import os
 import sys
 import urllib.request
-
+if "-h" in sys.argv:
+    print("flaskenv.py [options]")
+    print("""-h show this message and exit
+    --dir specify a directory besides the curent directory
+    --extra-dir specify an extra directory to make besides templates and static""")
+    
 if "--dir" in sys.argv:
     directory = sys.argv[sys.argv.index("--dir")+1]
 else:
