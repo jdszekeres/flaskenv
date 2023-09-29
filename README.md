@@ -1,7 +1,8 @@
 # flaskenv
 set up environment for flask
 ```bash
-git clone https://github.com/jdszekeres.git
+git clone https://github.com/jdszekeres/flaskenv.git
+cd flaskenv
 chmod +x flaskenv.py
 ./flaskenv.py
 ```
