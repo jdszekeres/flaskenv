@@ -6,7 +6,7 @@ cd flaskenv
 chmod +x flaskenv.py
 ./flaskenv.py
 ```
-makes a app.py, static, template, and index.html file
+makes an app.py, static, template, and index.html file
 
 
 or directly
